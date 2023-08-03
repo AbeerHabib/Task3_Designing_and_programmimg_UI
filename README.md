@@ -1,18 +1,14 @@
-# Robot-base-control-panel
-Control the movement of the robot base, or generally allow the robot to move forward, backward, right and left, and store those values in the database.
+# Designing and programming user interface to control robotic movement
 
-________________________________________________________________________________________________________________________________________________________________
+I've developed a control panel specifically for moving the base of the robot. The control panel allows movement in four directions: forward, backward, right, and left. Additionally, there is a dedicated button to stop movement.
 
+The control panel operates as follows: When the forward button is pressed, the page sends the letter “F” to the database to store the corresponding value. Similarly, pressing the backward button sends the letter “B” to the database, the right button sends “R”, and the left button sends “L”. When the stop button is pressed, a message is displayed to inform the user that the robot has stopped moving.
 
-I have completed on the previous control panel page by creating another control panel for moving the base. To move the base, we have four directions for the robot to move which are, forward, backward, right, left, and a button to stop moving. 
+Additionally, I've created another page that displays the current state of the robot's movement. This is achieved by retrieving the latest entry from the base table in the database, which indicates the direction in which the robot is currently moving.
 
-**How does this control panel work?** When the forward button is pressed, the page sends the letter “F” to the database to store the value, and when the backward button is pressed, the page sends the letter “B” to the database to store the value, and when the right button is pressed, the page sends the letter “R” to the database to store the value. And when the left button is pressed, the page sends the letter “L” to the database to store the value, while when the stop button is pressed, a message appears to the user that the robot has stopped moving.
+I've made the web page responsive, to ensure a consistent user experience across various devices.
 
-Also, I created another page to display the current state of the robot's movement, I did this by retrieving the last row of the base table, this means that the robot is moving in the same direction as that returned value.
-
-Also, I made the web page compatible with all devices, including mobile devices, so that the spacing between the page elements remains the same on a computer or any other mobile device.
-
-**_Notice:_**
-I have attached two videos to clarify:
-- Robot base control tutorial.
-- Mobile web design (for displaying the page on the mobile screen).
+**_Note:_**
+I've attached two videos to provide further clarification:
+- Tutorial for controlling the robot base.
+- Mobile web design (for optimal display on mobile screens).
